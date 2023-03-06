@@ -1,0 +1,82 @@
+.popup{
+    background-color: #ffffff;
+    width: 90%;
+    margin: auto;
+    padding: 20px $common-margin;
+    position: fixed;
+    -webkit-transform: translate(-50%,-50%);
+        -ms-transform: translate(-50%,-50%);
+            transform: translate(-50%,-50%);
+    left: 50%;
+    top: 50%;
+    border-radius: 4px;
+    display: none;
+    text-align: left;
+    z-index: 3;
+    @media (min-width:$breakpoint-medium) {
+        width: 33.333%;
+    }
+    .btn-close{
+        position: absolute;
+        right: $common-margin;
+    }
+    h2{
+        font-size: 2.4rem;
+        font-weight: 600;
+    }
+    input, .msg{
+        @include border-radius;
+        border-bottom: 1px solid $medium-grey;
+        background-color: $lightGray;
+        padding: 20px 16px;
+        width: 100%;
+        font-size: 14px;
+        margin-bottom: 16px;
+        
+    }
+    .msg{
+        height: 128px;
+        resize: none;
+    }
+    input:focus::-webkit-input-placeholder {
+        color: transparent;
+      }
+    input:focus::-moz-placeholder {
+        color: transparent;
+      }
+    input:focus:-ms-input-placeholder {
+        color: transparent;
+      }
+    input:focus::-ms-input-placeholder {
+        color: transparent;
+      }
+    input:focus::placeholder {
+        color: transparent;
+      }
+}
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+    background-color: rgba(0,0,0,0.6);
+    opacity: 0;
+    visibility: hidden;
+    -webkit-transition: all .1s ease;
+    -o-transition: all .1s ease;
+    transition: all .1s ease;
+    z-index: 2;
+}
+.btn-wrap{
+    @include nav-flex;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    .cancel{
+        margin-right: $common-margin;
+        cursor: pointer;
+        color: $orange;
+        font-weight: 600;
+    }
+}

@@ -1,0 +1,36 @@
+.spec-table{
+    background-color: $lightGray;
+    padding: 40px 0 80px 0;
+    h2{
+        @include section-title;
+        margin-left: $common-margin;
+        @media (min-width: 960px) {
+            margin-left: 0;
+        }
+    }
+    .table-wrap{
+        overflow-x: auto;
+    }
+    table{
+        border-collapse: collapse;
+        width: 100%;
+        font-size: 14px;
+        margin-left: $common-margin;
+        @media (min-width: 960px) {
+            margin-left: auto;
+        }
+        tr:nth-child(even){
+            background-color: $white;
+        }
+        th, td{
+            text-align: left;
+            padding: 8px 20px;
+            white-space: nowrap;
+        }
+        th{
+            color: $orange;
+            font-weight: 600;
+        }
+
+    }
+}

@@ -1,0 +1,111 @@
+.main-nav{
+    @include nav-direction-row;
+    padding: 21px 0;
+    position: relative; 
+    @media (min-width: $breakpoint-large) {
+         padding: 0;
+         .bars{
+            display: none;
+         }   
+    }
+    .navbar-logo{
+        position: absolute;
+        left: 55px;
+        @media (min-width: $breakpoint-large) {
+            left: 0;
+        }
+        img{
+            width: 105px;
+            @media (min-width: $breakpoint-large) {
+                width: auto;
+            }
+        }
+       
+    }
+    .nav-menu{
+        margin-left: 170px;
+        @media (min-width: $breakpoint-xlarge) {
+            margin-left: 208px;
+        }
+        
+        ul{
+        @include nav-flex;
+        gap: 24px;
+        padding: 32px 0; 
+        @media (min-width: $breakpoint-xlarge) {
+            gap: 40px;
+        } 
+        li{
+            font-weight: 600;
+            color: $white;
+            font-size: 1.8rem;
+            
+            a{
+                
+                padding: 44px 0px;
+                @media (min-width: $breakpoint-xlarge) {
+                    padding: 44px 10px;
+                }
+                &:hover{
+                    color: $semiBlack;
+                    border-bottom: 5px solid $semiBlack;
+                }
+                &.active{
+                    border-bottom: 5px solid $semiBlack;
+                }
+            }
+            
+        }
+        input{
+            @include input;
+            padding: 16px;
+            width: 256px;
+            background-image: url(../img/nav/search.svg);
+            &:focus-visible{
+                outline: 1px solid $orange;
+            }
+    }
+    }
+    }
+    .user-menu ul{
+        @include nav-flex;
+        gap: 24px;
+        color: $white;
+        font-size: 2rem;
+        @media (max-width: $breakpoint-small) {
+            gap: 10px;
+        }
+        a{
+            position: relative;
+        }
+        li:hover{
+            color: black;
+        }
+            img:hover{
+                -webkit-filter: invert(1);
+                        filter: invert(1);
+            }
+            span{
+                background-color: green;
+                border: 1px solid transparent;
+                border-radius: 50%;
+                width: 20px;
+                height: 20px;
+                text-align: center;
+                line-height: 18px;
+                font-size: 15px;
+                position: absolute;
+                right: -10px;
+                bottom: -10px;
+            }
+    }
+}
+
+
+//small media
+
+@media (max-width: $breakpoint-large) {
+    .nav-menu{
+        display: none;
+    }
+  }

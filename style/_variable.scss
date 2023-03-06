@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Poppins:wght@600&display=swap');
+
+
+$primaryFont: "Inter", sans-serif;
+$headingsFont: "Poppins", sans-serif;
+$semiBlack: #1E1E1E;
+$orange: #FE5E41;
+$white: #fff;
+$black: #000;
+$lightGray: #F2F2F2;
+$bgColor: #e5e5e5;
+$green: #00A878;
+$darkest-grey: #6e6e6e;
+$medium-grey: #dedede;
+
+$no-border: 0;
+
+
+//breakpoints
+
+$breakpoint-small: 340px;
+$breakpoint-medium: 600px;
+$breakpoint-large: 1024px;
+$breakpoint-xlarge: 1200px;
+
+//divider
+$divider-small: 22px;
+
+
+//calc for input label
+$position-left: calc(50% + 20px);
+
+//margins
+$common-margin: 2.4rem;
+

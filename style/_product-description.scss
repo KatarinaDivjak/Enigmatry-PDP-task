@@ -1,0 +1,59 @@
+.specs-nav{
+    border-bottom: 1px solid $medium-grey;
+}
+
+.nav-tabs{
+    margin-bottom: 20px;
+    border: $no-border;
+    font-weight: 600;
+    color: $semiBlack;
+    font-size: 1.6rem;
+    padding: 0;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+    .nav-link{
+        color: $semiBlack;
+        padding: 0 5px;
+        &.active{
+            border: $no-border;
+        }
+        &:hover{
+            border: $no-border;
+        }
+    }
+}
+.tab-content{
+    padding: 60px 0;
+    .prod-description-tab.active{
+        @include section-layout;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: reverse;
+            -ms-flex-direction: column-reverse;
+                flex-direction: column-reverse;
+        article{
+            -ms-flex-item-align: start;
+                align-self: flex-start;
+            @media (max-width: $breakpoint-medium) {
+                margin: 0 $common-margin;
+            }
+            @media (min-width: $breakpoint-xlarge) {
+                width: 45%;
+            }
+        }
+        figure{
+            width: 100%;
+            @media (min-width: $breakpoint-xlarge) {
+                width: 50%;
+                img{
+                    width: 100%;
+                }
+            }
+        }
+        h2{
+            @include section-title;
+            margin-top: $common-margin;
+            
+        }
+
+    }
+}

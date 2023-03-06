@@ -1,0 +1,127 @@
+//Breadcrumbs
+.breadcrumbs-menu{
+    padding: 40px 0;
+    ul{
+    @include nav-flex;
+    
+    }
+    a, i{
+            margin-right: 1rem;
+        }
+    
+}
+//section header
+.pdp-section-header{
+    @include nav-direction-row;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+    margin-bottom: 3.6rem;
+    h1{
+        font-size: 4rem;
+        margin: 0;
+    }
+    .social-share{
+        @include nav-flex;
+        gap: 2rem;
+        margin: 0;
+    }
+}
+
+//product img + cart
+
+.pdp-wrap{
+    @include section-layout;
+    gap: 32px;
+    .slides{
+        width: 100%;
+        @media (min-width:$breakpoint-large) {
+            width: 55%;
+        }
+    }
+    .cart{
+        padding: 16px;
+        background-color: $lightGray;
+        @media (min-width: $breakpoint-medium) {
+            padding: 24px 32px;
+        }
+            .in-stock{
+            color: $semiBlack;
+            font-weight: 600;
+            span{
+                color: $orange;
+            }
+        }
+        .select-wrap{
+            @include nav-flex;
+            -webkit-box-orient: vertical;
+            -webkit-box-direction: normal;
+                -ms-flex-direction: column;
+                    flex-direction: column;
+            position: relative;
+            margin: 20px 0;
+            gap: 22px;
+            @media (min-width: $breakpoint-xlarge) {
+                -webkit-box-orient: horizontal;
+                -webkit-box-direction: normal;
+                    -ms-flex-direction: row;
+                        flex-direction: row;
+            }
+            p{
+                @include input-label;
+            }
+            .left-position{
+                left: 9px;
+            }
+            .top-right-position{
+                top: 80px;
+                left: 9px;
+                @media (min-width: $breakpoint-xlarge) {
+                    top: 4px;
+                    left: $position-left;
+
+                }
+            }
+            select{
+                @include input;
+                background-image: url(../img/icons/chevron-down-solid.svg);
+                height: 55px;
+                @media (min-width: $breakpoint-xlarge) {
+                    width: 50%;
+                }
+            }
+            
+        }
+        .form-check-input:checked{
+            background-color: $green;
+            border-color: $green;
+        }
+        .btn-green{
+            margin-right: 5px;
+            margin-bottom: 8px;
+        }
+
+        
+    }
+
+}
+
+
+
+//small media
+
+@media (max-width: $breakpoint-medium) {
+    .pdp-section-header{
+        position: relative;
+        h1{
+            font-size: 2.4rem;
+            width: 70%;
+        }
+        .social-share{
+            position: absolute;
+            bottom: 0;
+            right: 0;
+        }
+    }
+    
+  }

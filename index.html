@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product name - Product Detailed Page</title>
+    <meta name="description" content="Lorem ipsum dolor sit amet.">
+    <!-- FAVICON -->
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <!-- BOOTSTRAP -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <!-- FONT AWESOME -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+        integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- SWIPER SLIDER -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="style/main.css">
+</head>
+
+<body>
+    <!-- NAVBAR START -->
+    <header class="main-header">
+        <div class="container">
+            <!-- Logo + Navigation -->
+            <nav class="main-nav">
+                <!-- mobile menu bars -->
+                <div class="bars">
+                    <img src="img/nav/bars.svg" alt="mobile menu icon">
+                </div>
+                <div class="navbar-logo">
+                    <a href="#"><img src="img/nav/logo.svg" alt="Logo"></a>
+                </div>
+                <div class="nav-menu">
+                    <ul>
+                        <li>
+                            <a href="#" class="active">Products</a>
+                        </li>
+                        <li>
+                            <a href="#">Services</a>
+                        </li>
+                        <li>
+                            <a href="#">About us</a>
+                        </li>
+                        <li>
+                            <a href="#">Contact</a>
+                        </li>
+                        <li>
+                            <!-- search -->
+                            <input type="search" placeholder="Search" aria-label="Search">
+
+                        </li>
+
+                    </ul>
+
+                </div>
+
+                <!-- USER PART  -->
+                <div class="user-menu">
+                    <ul>
+                        <li>
+                            <a href="#"><i class="fa-regular fa-user"></i></a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="fa-regular fa-heart"></i></a>
+                        </li>
+                        <li>
+                            <a href="#"><img src="img/nav/shopping-cart.svg" alt="Shopping cart icon"><span>1</span></a>
+                        </li>
+
+                    </ul>
+                </div>
+
+            </nav>
+        </div>
+
+    </header>
+    <!-- NAVBAR END -->
+    <main>
+        <!-- Product details -->
+        <section class="container">
+            <!-- breadcrumbs -->
+            <nav class="breadcrumbs-menu">
+                <ul>
+                    <li>
+                        <a href="#">Home</a><i class="fa-solid fa-chevron-right"></i>
+                    </li>
+                    <li>
+                        <a href="#">Products</a><i class="fa-solid fa-chevron-right"></i>
+                    </li>
+                    <li>
+                        <a href="#">Bikes</a><i class="fa-solid fa-chevron-right"></i>
+                    </li>
+                </ul>
+            </nav>
+            <!-- product name + social share -->
+            <div class="pdp-section-header">
+                <h1>Product name lorem ipsum</h1>
+
+                <ul class="social-share">
+                    <li>
+                        <a href="#"><i class="fa-solid fa-chevron-left"></i></a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="fa-solid fa-chevron-right"></i></a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="fa-regular fa-heart"></i></a>
+                    </li>
+                    <li>
+                        <a href="#"><img src="img/icons/share-nodes.svg" alt="Share icon"></a>
+                    </li>
+
+                </ul>
+            </div>
+            <div class="pdp-wrap">
+                <div class="slides">
+                    <!-- Slider main container -->
+                    <div class="swiper">
+                        <!-- Additional required wrapper -->
+                        <div class="swiper-wrapper">
+                            <!-- Slides -->
+                            <div class="swiper-slide">
+                                <img src="img/pdp/image-bike.png" alt="Bike slide image">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="img/pdp/image-bike.png" alt="Bike slide image">
+                            </div>
+
+                        </div>
+
+
+                        <!-- navigation buttons -->
+                        <div class="swiper-button-prev"></div>
+                        <div class="swiper-button-next"></div>
+
+
+                    </div>
+                </div>
+                <div class="cart">
+                    <p class="in-stock">In stock <span>- only 2 left</span></p>
+                    <p class="short-desc"> Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore
+                        eu fugiat nulla
+                        pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
+                        mollit anim id est laborum.</p>
+                    <form method="post">
+                        <div class="select-wrap">
+                            <p class="left-position">Model</p>
+                            <p class="top-right-position">Color</p>
+                            <select class="form-select">
+                                <option selected>
+                                    Gents - Medium</option>
+                                <option value="1">One</option>
+                                <option value="2">Two</option>
+                            </select>
+                            <select class="form-select">
+                                <option selected>Black</option>
+                                <option value="1">White</option>
+                            </select>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+                            <label class="form-check-label" for="flexCheckChecked">
+                                Add option lorem ipsum
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                            <label class="form-check-label" for="flexCheckDefault">
+                                Add option autpat velit cano totam rem aperiam
+                            </label>
+                        </div>
+                        <div class="spacer-small">&nbsp;</div>
+                        <button class="btn-green" type="submit">Add to cart</button>
+                        <button class="btn-white" type="button">Contact</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+        <!-- Product description TABS -->
+        <div class="spacer-small"></div>
+        <section>
+            <nav class="specs-nav">
+                <div class="nav nav-tabs container" id="nav-tab" role="tablist">
+                    <button class="nav-link active" id="nav-home-tab" data-bs-toggle="tab" data-bs-target="#nav-home"
+                        type="button" role="tab" aria-controls="nav-home" aria-selected="true">Description</button>
+                    <button class="nav-link" id="nav-profile-tab" data-bs-toggle="tab" data-bs-target="#nav-profile"
+                        type="button" role="tab" aria-controls="nav-profile"
+                        aria-selected="false">Specifications</button>
+                    <button class="nav-link" id="nav-contact-tab" data-bs-toggle="tab" data-bs-target="#nav-contact"
+                        type="button" role="tab" aria-controls="nav-contact" aria-selected="false">Reviews
+                        <span>(7)</span></button>
+                </div>
+            </nav>
+            <div class="tab-content container-sm" id="nav-tabContent">
+                <div class="tab-pane fade show active prod-description-tab" id="nav-home" role="tabpanel"
+                    aria-labelledby="nav-home-tab" tabindex="0">
+                    <article>
+                        <h2>Product description</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                            labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                            laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
+                            voluptate velit esse cillum dolore eu fugiat nulla pariatur.<br><br>
+                            Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit
+                            anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+                            accusantium doloremque laudantium.</p>
+                        <button class="btn-white-orange" type="button">More Info</button>
+                    </article>
+                    <figure>
+                        <img src="img/pdp/city-bikes-lifestyle.png" alt="Bikes lifestyle image">
+                    </figure>
+                </div>
+                <div class="tab-pane fade prod-description-tab" id="nav-profile" role="tabpanel"
+                    aria-labelledby="nav-profile-tab" tabindex="0">
+                    <article>
+                        <h2>Specifications</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                            labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                            laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
+                            voluptate velit esse cillum dolore eu fugiat nulla pariatur.<br><br>
+                            Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit
+                            anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+                            accusantium doloremque laudantium.</p>
+                    </article>
+
+                </div>
+                <div class="tab-pane fade prod-description-tab" id="nav-contact" role="tabpanel"
+                    aria-labelledby="nav-contact-tab" tabindex="0">
+                    <article>
+                        <h2>Reviews</h2>
+                        <p><em>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+                                ut
+                                labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                                ullamco
+                                laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit
+                                in
+                                voluptate velit esse cillum dolore eu fugiat nulla pariatur.</em></p>
+                    </article>
+
+                </div>
+
+            </div>
+        </section>
+        <!-- Technical specs TABLE -->
+        <section class="spec-table">
+            <div class="container-lg g-0">
+                <h2>Technical specifications</h2>
+
+                <div class="table-wrap">
+                    <table>
+                        <tr>
+                            <th>Model</th>
+                            <th>Frame size</th>
+                            <th>Weight</th>
+                            <th>Max speed</th>
+                            <th>Battery</th>
+                            <th>Engine</th>
+                        </tr>
+                        <tr>
+                            <td>Ladies - Small</td>
+                            <td>50 cm</td>
+                            <td>24 kg</td>
+                            <td>45 km/h</td>
+                            <td>625Wh</td>
+                            <td>Bosch Performance Line Speed</td>
+                        </tr>
+                        <tr>
+                            <td>Ladies - Medium</td>
+                            <td>55 cm</td>
+                            <td>25 kg</td>
+                            <td>45 km/h</td>
+                            <td>625Wh</td>
+                            <td>Bosch Performance Line Speed</td>
+                        </tr>
+                        <tr>
+                            <td>Ladies - Large</td>
+                            <td>60 cm</td>
+                            <td>26 kg</td>
+                            <td>45 km/h</td>
+                            <td>625Wh</td>
+                            <td>Bosch Performance Line Speed</td>
+                        </tr>
+                        <tr>
+                            <td>Gents - Small</td>
+                            <td>50 cm</td>
+                            <td>24 kg</td>
+                            <td>45 km/h</td>
+                            <td>625Wh</td>
+                            <td>Bosch Performance Line Speed</td>
+                        </tr>
+                        <tr>
+                            <td>Gents - Medium</td>
+                            <td>55 cm</td>
+                            <td>25 kg</td>
+                            <td>45 km/h</td>
+                            <td>625Wh</td>
+                            <td>Bosch Performance Line Speed</td>
+                        </tr>
+                        <tr>
+                            <td>Gents - Large</td>
+                            <td>60 cm</td>
+                            <td>26 kg</td>
+                            <td>45 km/h</td>
+                            <td>625Wh</td>
+                            <td>Bosch Performance Line Speed</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+            <div class="spacer-large">&nbsp;</div>
+        </section>
+        <!-- POPUP -->
+        <div class="overlay"></div>
+        <div class="popup">
+            <button class="close btn-close"></button>
+            <h2>Contact us</h2>
+            <p>
+                We’ll get back to you as soon as possible.
+            </p>
+            <form action="post">
+                <input class="popup-input" type="text" name="email" placeholder="Your e-mail">
+                <textarea class="msg" name="message" placeholder="Your message"></textarea>
+                <div class="btn-wrap">
+                    <a class="close cancel">Cancel</a>
+                    <button class="btn-orange">Send message</button>
+                </div>
+            </form>
+
+        </div>
+    </main>
+    <!-- bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous"></script>
+    <!-- Swiper js -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <!-- main js -->
+    <script src="js/main.js"></script>
+</body>
+
+
+</html>
